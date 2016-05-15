@@ -31,6 +31,19 @@ public class KomoranResult{
 		}
 		return nounList;
 	}
+	
+	public List<String> getResult(){
+		List<String> nounList = new ArrayList<>();
+		for (LatticeNode latticeNode : resultNodeList) {
+			if(latticeNode.getTag().equals(SYMBOL.NNG) || 
+					latticeNode.getTag().equals(SYMBOL.NNP) ||
+					latticeNode.getTag().equals(SYMBOL.MAG) ||
+					latticeNode.getTag().equals(SYMBOL.XR)){
+				nounList.add(parser.combine(latticeNode.getMorph()));
+			}
+		}
+		return nounList;
+	}
 
 	public String getPlainText(){
 		StringBuffer result = new StringBuffer();

@@ -48,4 +48,8 @@ public class SYMBOL {
 	public static final String NNP = "NNP";
 	public static final String NNB = "NNB";
 	
+	
+	public static final String MAG = "MAG";
+	public static final String XR = "XR";
+	
 }
