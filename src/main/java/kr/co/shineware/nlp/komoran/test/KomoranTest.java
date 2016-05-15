@@ -31,7 +31,7 @@ public class KomoranTest {
 		komoran.setFWDic("user_data/fwd.user");
 		komoran.setUserDic("user_data/dic.user");
 
-		String input = "밀리언 달러 베이비랑 바람과 함께 사라지다랑 뭐가 더 재밌었어?";
+		String input = "한번씩 피부가 뒤집어져서 시카페어 샘플써봤는데 🙊하루만에 가라앉았다🙊 그래서 바로사버렸닿ㅎㅎㅎ 나도 매끈매끈피부 하고싶어서 프라이머를 샀는데〰 매끈한피부가 프라이머하나로 만들어지는게 아닌거같다🙈 너무귀여워서 사버린 랑콤 쥬시쉐이커💄 오일이라그런지 발색은 연하지만 짱좋다 촉촉한입술👄 그리고 샘플로받은 랑콤향수가 너무좋다ㅠㅠ 담에사야지❣ 너무너무 기분좋게 베네피트 듀더훌라 당첨되따💃🏻💃🏻💃🏻 크림쉐딩인데 오늘내일써보고 후기남겨야지ㅎㅎ😝 이번달은 이렇게 끝🙋🏻";
 		KomoranResult analyzeResultList = komoran.analyze(input);
 		List<Token> tokenList = analyzeResultList.getTokenList();
 
